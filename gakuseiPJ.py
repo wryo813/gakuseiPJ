@@ -23,7 +23,7 @@ st_chain = SpinChain(total_devices=3, spi_select=(0, 0))
 # 各モータードライバのインスタンス生成
 moter_x = st_chain.create(0)
 moter_y1 = st_chain.create(1)
-moter_y2 = st_chain.create(1)
+moter_y2 = st_chain.create(2)
 
 # ボタン押下時のコールバック関数
 def SW1_stop(channel):
